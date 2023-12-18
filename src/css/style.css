@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'Park Lane Nf';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/Park-LaneNF.woff');    
+}
+
+@font-face {
+    font-family: 'Ironick NF';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/ironick-normal.regular.woff');
+}
+
+@font-face {
+    font-family: 'Bembo Std';
+    font-style: normal;
+    font-weight: normal;
+    src: url(../fonts/Bembo-Std.woff);
+}
+
+@font-face {
+    font-family: 'Bembo Std';
+    font-style: italic;
+    font-weight: normal;
+    src: url(../fonts/Bembo-Std-Italic.woff);
+}
+
+@font-face {
+    font-family: 'Bembo Std';
+    font-style: normal;
+    font-weight: bold;
+    src: url(../fonts/Bembo-Std-Bold.woff);
+}
+
+@import "vendors/normalize.css";
+
+@import "utils/variables.css";
+
+@import "base/main.css";
+@import "base/media.css";
+
+@import "layout/header.css";
+@import "layout/footer.css";
+@import "layout/section.css";
