@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
     <script defer src="https://unpkg.com/alpinejs"></script>
     <link rel="stylesheet" href="/src/css/style.css">
     <link rel="alternate" hreflang="fr" href="https://the-great-gatsby.yermakov.fr/fr/" />
@@ -19,17 +20,24 @@
         </button>
         <nav class="menu"
         x-show="menuIsOpen"
-        x-transition.duration.950ms
-        x-transition.opacity>
+        x-collapse>
             <a href="#" class="logo--menu"><img src="/public/img/logo.svg" alt="logo"></a>
             <h1 class="menu__title">Menu</h1>
             <button class="menu__close" aria-controls="menu" @click="menuIsOpen = false">
                 <img src="/public/img/menu-close.svg" alt="menu close button">
             </button>
             <ul class="menu__list">
-                <li class="menu__item">
-                    <p>All articles</p>
-                    <ul class="menu__articles">
+                <li class="menu__item" x-data="{listOpen : false}">
+                    <button class="menu__button"
+                    aria-controls="menu__articles"
+                    @click="listOpen = !listOpen"
+                    :class="{open: listOpen}">
+                    All articles
+                </button>
+                    <ul id="menu__articles"
+                    x-show="listOpen"
+                    x-collapse
+                    class="menu__articles">
                         <li class="menu__article"><a class="menu__article__link" href="/en/quote.html">Quote</a></li>
                         <li class="menu__article"><a class="menu__article__link" href="/en/movie.html">Movie</a></li>
                         <li class="menu__article"><a class="menu__article__link" href="/en/director.html">Director</a></li>
