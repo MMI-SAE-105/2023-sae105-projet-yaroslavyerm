@@ -30,9 +30,9 @@
                 <img src="/public/img/menu-close.svg" alt="menu close button">
             </button>
             <ul class="menu__list">
-                <li class="menu__item">
-                    <p>All articles</p>
-                    <ul class="menu__articles">
+                <li class="menu__item" x-data="{listOpen: false}">
+                    <button aria-controls="menu__articles" @click="listOpen = !listOpen">All articles</button>
+                    <ul class="menu__articles" x-show="listOpen" x-collapse>
                         <li class="menu__article"><a class="menu__article__link" href="/en/quote.html">Quote</a></li>
                         <li class="menu__article"><a class="menu__article__link" href="/en/movie.html">Movie</a></li>
                         <li class="menu__article"><a class="menu__article__link" href="/en/director.html">Director</a></li>
