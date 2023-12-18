@@ -15,11 +15,21 @@
 
 <body>
     <header class="header">
-        <button class="menu__open"><img src="/public/img/menu-open.svg" alt="menu open button"></button>
-        <nav class="menu">
+        <button class="menu__open"
+        aria-controls="menu"
+        @click="menuIsOpen = true">
+        <img src="/public/img/menu-open.svg" alt="menu open button">
+    </button>
+        <nav class="menu"
+        x-show="menuIsOpen"
+        x-collapse>
             <a href="/en/index.html" class="logo--menu"><img src="/public/img/logo.svg" alt="logo"></a>
             <h1 class="menu__title">Menu</h1>
-            <button class="menu__close"><img src="/public/img/menu-close.svg" alt="menu close button"></button>
+            <button class="menu__close"
+            aria-controls="menu"
+            @click="menuIsOpen = false">
+            <img src="/public/img/menu-close.svg" alt="menu close button">
+        </button>
             <ul class="menu__list">
                 <li class="menu__item">
                     <p>All articles</p>
