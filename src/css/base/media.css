@@ -4,6 +4,8 @@ img {
 }
 
 video{
-    max-width: 100%;
+    max-width: calc(100% - 26px);
     height: auto;
+    margin: 0 13px;
+    margin-bottom: 15px;
 }
