@@ -1,0 +1,45 @@
+.home__intro{
+    margin: 15px 30px;
+}
+
+.home__subheading{
+    font-family: Ironick NF;
+    font-size: var(--headings);
+    font-weight: 400;
+    margin: 0 30px;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+.home__article{
+    margin: 0 30px;
+    margin-bottom: 20px;
+    padding: 0;
+    display: flex;
+    position: relative;
+    top: 0; left: 0;
+}
+
+.home__article__link{
+    text-decoration: none;
+}
+
+.home__article__title{
+    font-family: Ironick NF;
+    font-size: var(--subheadings);
+    font-weight: 400;
+    color: var(--pink);
+    margin: 0;
+    padding: 9px 9.5%;
+    text-align: center;
+    background-color: var(--dark-blue);
+    
+}
+
+.home__article__img{
+    display: block;;
+    z-index: 0;
+    object-fit: cover;
+}
+
+
