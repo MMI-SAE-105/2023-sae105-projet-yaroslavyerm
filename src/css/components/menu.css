@@ -1,5 +1,4 @@
 .menu {
-    display: block;
     position: fixed;
     top: 0;
     left: 0;
@@ -7,4 +6,20 @@
     height: 100vh;
     background-color: var(--dark-blue);
     z-index: 100;
+}
+
+.menu__top{
+    display: flex;
+    width: calc(100% - 30px);
+    height: auto;
+    margin: 0 15px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.noscroll,
+.noscroll body {
+    overflow: hidden;
 }
