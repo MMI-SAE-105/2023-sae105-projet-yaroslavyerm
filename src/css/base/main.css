@@ -13,3 +13,10 @@ h1{
     margin: 0 40px;
     line-height: 120%;
 }
+
+p{
+    font-size: var(--text);
+    font-family: Bembo Std;
+    color: var(--dark-blue);
+    text-align: left;
+}
