@@ -46,3 +46,8 @@ main{
     margin-bottom: 11px;
     margin-top: 11px; 
 }
+
+.main__img{
+    width: calc(100% - 26px);
+    margin: 0 13px;
+}

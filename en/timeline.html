@@ -36,7 +36,7 @@
                 <li class="menu__item" x-data="{listOpen: false}">
                     <button
                     aria-controls="menu__articles"
-                    @click="listOpen = !listOpen">All articles</button>
+                    @click="listOpen = !listOpen" class="menu__button">All articles</button>
                     <ul class="menu__articles"
                     x-show="listOpen"
                     x-collapse>

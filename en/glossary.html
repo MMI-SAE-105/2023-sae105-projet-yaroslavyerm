@@ -34,7 +34,7 @@
             </div>
             <ul class="menu__list">
                 <li class="menu__item" x-data="{listOpen: false}">
-                    <button aria-controls="menu__articles" @click="listOpen = !listOpen">All articles</button>
+                    <button aria-controls="menu__articles" @click="listOpen = !listOpen" class="menu__button">All articles</button>
                     <ul class="menu__articles" x-show="listOpen" x-collapse>
                         <li class="menu__article"><a class="menu__article__link" href="/en/quote.html">Quote</a></li>
                         <li class="menu__article"><a class="menu__article__link" href="/en/movie.html">Movie</a></li>
