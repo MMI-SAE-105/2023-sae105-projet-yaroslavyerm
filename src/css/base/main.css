@@ -51,3 +51,20 @@ main{
     width: calc(100% - 26px);
     margin: 0 13px;
 }
+
+.main__link{
+    display: block;
+    height: 35px;
+    width: calc(100% - 60px);
+    margin: 0 30px;
+    padding: 15px 0;
+    justify-content: center;
+    text-decoration: none;
+    background-color: var(--dark-blue);
+    padding: auto;
+    color: var(--Pale-beige, #FFEAE5);
+    font-family: Ironick NF;
+    font-size: var(--subheadings);
+    font-weight: normal;
+    text-align: center;
+}
