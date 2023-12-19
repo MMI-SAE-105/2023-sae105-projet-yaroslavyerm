@@ -1,0 +1,110 @@
+.header{
+    width: 100%;
+    height: 615px;
+}
+
+.header--home{
+    width: 100%;
+    height: 800px;
+}
+
+.header__top{
+    display: flex;
+    width: calc(100% - 30px);
+    height: auto;
+    margin: 0 15px;
+    margin-top: 20px;
+    margin-bottom: 176px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+.menu__open{
+    background: none;
+    border: none;
+    padding: 0;
+    height: 19px;
+}
+
+.logo__link{
+    height: 40px;
+    width: 40px;
+}
+
+.logo__img{
+    height: 100%;
+    width: 100%;
+}
+
+.home__title{
+    color: var(--pale-beige);
+    font-family: Park Lane NF;
+    font-size: var(--homepage-title);
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 290px;
+}
+
+.header__background__img--home{
+    width: 100%;
+    height: 820px;
+    position: absolute;
+    top: 0; left: 0;
+    z-index: -4;
+}
+
+.header__background--home{
+    width: 100%;
+    height: 820px;
+    position: absolute;
+    top: 0; left: 0;
+    z-index: -4;
+}
+
+.header__background__overlay1{
+    content: "";
+    width: 100%;
+    height: 630px;
+    background-color: var(--black);
+    mix-blend-mode: color;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    z-index: -3;
+}
+.header__background__overlay2{
+    content: "";
+    width: 100%;
+    height: 630px;
+    background-color: var(--light-orange);
+    mix-blend-mode: multiply;
+    position: absolute;
+        top: 0;
+        left: 0;
+    opacity: 1;
+    z-index: -2;
+}
+.header__background__overlay3{
+    content: "";
+    width: 100%;
+    height: 630px;
+    background-color: var(--dark-blue);
+    mix-blend-mode: lighten;
+    position: absolute;
+        top: 0;
+        left: 0;
+    opacity: 1;
+    z-index: -1;
+}
+
+.header__background__overlay1--home{
+    height: 820px;
+}
+.header__background__overlay2--home{
+    height: 820px;
+}
+.header__background__overlay3--home{
+    height: 820px;
+}

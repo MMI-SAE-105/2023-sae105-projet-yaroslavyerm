@@ -15,9 +15,12 @@
 
 <body>
     <header class="header header--home">
-        <button class="menu__open" aria-controls="menu" @click="menuIsOpen = true">
+        <div class="header__top">
+            <button class="menu__open" aria-controls="menu" @click="menuIsOpen = true">
             <img src="/public/img/menu-open.svg" alt="menu open button">
         </button>
+        <a href="#" class="logo__link"><img class="logo__img" src="/public/img/logo.svg" alt="logo"></a>
+        </div>
         <nav class="menu"
         x-show="menuIsOpen"
         x-collapse>
@@ -51,9 +54,13 @@
                 <li class="menu__item"><a class="menu__link" href="/en/contact.html">Contact me</a></li>
             </ul>
         </nav>
-        <a href="#" class="logo__link"><img class="logo__img" src="/public/img/logo.svg" alt="logo"></a>
         <h1 class="home__title">All the bright precious things...</h1>
-        <img class="header__background header__background--home" src="/public/img/header_home.webp" alt="art deco pattern">
+        <div class="header__background header__background--home">
+            <div class="header__background__overlay1 header__background__overlay1--home"></div>
+            <div class="header__background__overlay2 header__background__overlay2--home"></div>
+            <div class="header__background__overlay3 header__background__overlay3--home"></div>
+            <img class="header__background__img header__background__img--home" src="/public/img/header_home.webp" alt="art deco pattern">
+        </div>
     </header>
     <main>
         <p class="home__intro">Uncover the culture of an age known for its luxury and intrigue. This website celebrates the Roaring Twenties, in the
