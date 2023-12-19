@@ -3,3 +3,12 @@ img{
     height: auto;
     
 }
+
+h1{
+    font-size: var(--headings);
+    font-family: Ironick NF;
+    font-weight: normal;
+    color: var(--pale-beige);
+    text-align: center;
+    margin: 0 40px;
+}
