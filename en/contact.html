@@ -15,11 +15,14 @@
 
 <body>
     <header class="header">
-        <button class="menu__open"
-        aria-controls="menu"
-        @click="menuIsOpen = true">
-            <img src="/public/img/menu-open.svg" alt="menu open button">
-        </button>
+        <div class="header__top">
+            <button class="menu__open"
+            aria-controls="menu"
+            @click="menuIsOpen = true">
+                <img src="/public/img/menu-open.svg" alt="menu open button">
+            </button>
+            <a href="/en/index.html" class="logo__link"><img class="logo__img" src="/public/img/logo.svg" alt="logo"></a>
+        </div>
         <nav class="menu"
         x-show="menuIsOpen"
         x-collapse>
@@ -46,9 +49,13 @@
                 <li class="menu__item"><a class="menu__link" href="/en/contact.html">Contact me</a></li>
             </ul>
         </nav>
-        <a href="/en/index.html" class="logo__link"><img class="logo__img" src="/public/img/logo.svg" alt="logo"></a>
         <h1 class="title">Contact me</h1>
-        <img class="header__background" src="/public/img/header_contact.webp" alt="art deco pattern">
+        <div class="header__background">
+            <div class="header__background__overlay1"></div>
+            <div class="header__background__overlay2"></div>
+            <div class="header__background__overlay3"></div>
+            <img class="header__background__img" src="/public/img/header_contact.webp" alt="art deco pattern">
+        </div>
     </header>
     <main>
         <form class="contact__form" action="#" method="get">

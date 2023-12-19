@@ -44,9 +44,8 @@
     font-weight: normal;
     text-align: center;
     margin-bottom: 290px;
+    line-height: 100%;
 }
-
-
 
 .header__background__img{
     width: 100%;
@@ -74,7 +73,7 @@
 .header__background__overlay1{
     content: "";
     width: 100%;
-    height: 630px;
+    height: 635px;
     background-color: var(--black);
     mix-blend-mode: color;
     position: absolute;
@@ -86,7 +85,7 @@
 .header__background__overlay2{
     content: "";
     width: 100%;
-    height: 630px;
+    height: 635px;
     background-color: var(--light-orange);
     mix-blend-mode: multiply;
     position: absolute;
@@ -98,7 +97,7 @@
 .header__background__overlay3{
     content: "";
     width: 100%;
-    height: 630px;
+    height: 635px;
     background-color: var(--dark-blue);
     mix-blend-mode: lighten;
     position: absolute;
