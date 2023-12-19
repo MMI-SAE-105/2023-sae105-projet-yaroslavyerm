@@ -11,6 +11,8 @@
 @import "layout/footer.css";
 @import "layout/section.css";
 
+@import "components/menu.css";
+
 @font-face {
     font-family: 'Park Lane Nf';
     font-style: normal;
