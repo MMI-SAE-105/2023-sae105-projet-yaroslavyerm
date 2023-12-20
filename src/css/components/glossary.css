@@ -1,0 +1,28 @@
+.glossary__subheading{
+    margin: 15px;
+    margin-left: 20px;
+    font-family: Park Lane NF;
+    font-size: var(--homepage-title);
+    color: var(--dark-blue);
+    font-weight: normal;
+}
+
+.glossary__list{
+    margin: 0;
+    margin-left: 30px;
+}
+
+.glossary__term{
+    font-family: Bembo Std;
+    font-size: var(--text);
+    color: var(--dark-blue);
+    font-weight: bold;
+}
+
+.glossary__definition{
+    font-family: Bembo Std;
+    font-size: var(--text);
+    color: var(--dark-blue);
+    font-weight: normal;
+    margin: 0 20px;
+}
