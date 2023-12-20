@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie</title>
+    <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="alternate" hreflang="fr" href="https://the-great-gatsby.yermakov.fr/fr/movie" />
+    <link rel="alternate" hreflang="en" href="https://the-great-gatsby.yermakov.fr/en/movie" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__top">
+            <button class="menu__open"
+            aria-controls="menu"
+            @click="menuIsOpen = true">
+                <img src="/public/img/menu-open.svg" alt="menu open button">
+            </button>
+            <a href="/en/index.html" class="logo__link"><img class="logo__img" src="/public/img/logo.svg" alt="logo"></a>
+        </div>
+        <nav class="menu"
+        x-show="menuIsOpen"
+        x-transition.duration.800ms>
+            <div class="menu__top">
+                <a href="/en/index.html" class="logo__menu"><img src="/public/img/logo.svg" alt="logo"></a>
+                <h1 class="menu__title">Menu</h1>
+                <button class="menu__close" aria-controls="menu" @click="menuIsOpen = false"><img src="/public/img/menu-close.svg"
+                        alt="menu close button"></button>
+            </div>
+            <ul class="menu__list">
+                <li class="menu__item" x-data="{listOpen: false}">
+                    <button aria-controls="menu__articles" @click="listOpen = !listOpen" class="menu__button">All articles</button>
+                    <ul class="menu__articles" x-show="listOpen" x-collapse>
+                        <li class="menu__article"><a class="menu__article__link" href="/en/quote.html">Quote</a></li>
+                        <li class="menu__article"><a class="menu__article__link" href="/en/movie.html">Movie</a></li>
+                        <li class="menu__article"><a class="menu__article__link" href="/en/director.html">Director</a>
+                        </li>
+                        <li class="menu__article"><a class="menu__article__link" href="/en/book.html">Book</a></li>
+                        <li class="menu__article"><a class="menu__article__link" href="/en/music.html">Music</a></li>
+                    </ul>
+                </li>
+                <li class="menu__item"><a class="menu__link" href="/en/glossary.html">Glossary</a></li>
+                <li class="menu__item"><a class="menu__link" href="/en/about.html">About</a></li>
+                <li class="menu__item"><a class="menu__link" href="/en/other.html">Other projects</a></li>
+                <li class="menu__item"><a class="menu__link" href="/en/contact.html">Contact me</a></li>
+            </ul>
+        </nav>
+        <h1 class="title">The Great Gatsby: A Cinematic Masterpiece Inspired by a Timeless Classic</h1>
+        <div class="header__background">
+            <div class="header__background__overlay1"></div>
+            <div class="header__background__overlay2"></div>
+            <div class="header__background__overlay3"></div>
+            <img class="header__background__img" src="/public/img/header_movie.webp" alt="art deco pattern">
+        </div>
+    </header>
+    <main>
+        <p class="main__published">by Yaroslav Yermakov
+        published Wednesday, October 18 at 12:14</p>
+        <p class="main__text">When it comes to film adaptations of classic literature, Baz Luhrmann's 2013 interpretation of <strong>‘The Great Gatsby’</strong> stands
+        out as a visually stunning and emotionally resonant film. Luhrmann's adaptation, based on <strong>F. Scott Fitzgerald</strong>'s cult
+        novel of the same name, is a modern take on the decadence and disillusionment of the <strong>Roaring Twenties</strong>. Dive into the
+        world of this gem of a movie, discovering its original story, director, and memorable soundtrack.</p>
+        <video src="/public/video/trailer.mp4" poster="/public/img/poster1.webp" controls></video>
+        <h2 class="main__subheading">"The Great Gatsby" by F. Scott Fitzgerald</h2>
+        <p class="main__text">The Great Gatsby (2013) stays true to the major themes and characters of <strong>F. Scott Fitzgerald</strong>'s classic novel, published
+        in 1925. The action unfolds in the luxurious world of Long Island's North Shore during the summer of 1922. The story
+        depicts the mysterious billionaire Jay Gatsby, his unrequited love for Daisy Buchanan, and the tragic ending of their
+        lives. The novel's themes of wealth, love, and the American Dream are brought to life on screen, allowing viewers to
+        immerse themselves in the Jazz Age.</p>
+        <h2 class="main__subheading">Baz Luhrmann: the talented director</h2>
+        <p class="main__text"><strong>Baz Luhrmann</strong>, known for his distinctive visual style and creative storytelling, directed this adaptation. His unique
+        approach infuses the film with a vibrant energy, combining the opulence of the <strong>1920’s</strong> with modern elements. Luhrmann's
+        ability to create visually captivating scenes, from extravagant parties to moments of quiet reflection, ensures that the
+        film remains a feast for the eyes.</p>
+        <img class="main__img" src="/public/img/img1_movie.webp" alt="image 1">
+        <h2 class="main__subheading">The musical accompaniment</h2>
+        <p class="main__text">One of the standout elements of "The Great Gatsby" (2013) is its exceptional soundtrack, which plays a key role in
+        enhancing the film's atmosphere. The hauntingly beautiful track <strong>"Young and Beautiful"</strong> by <strong>Lana Del Rey</strong> perfectly shows
+        the film's themes of love, beauty, and the fleeting nature of time. The soundtrack also features a mix of contemporary
+        and vintage songs, providing a musical backdrop that complements the film's time period and emotional depth.</p>
+        <p class="main__text">Baz Luhrmann's adaptation of <strong>"The Great Gatsby"</strong> (2013) successfully brings F. Scott Fitzgerald's novel to life on the
+        screen. With its faithful portrayal of the source material, visionary direction, and a soundtrack that lingers in the
+        mind, this cinematic gem continues to captivate audiences, making it a must-watch for both fans of the book and
+        newcomers to the story.</p>
+    </main>
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="footer__contact">
+                <h2 class="footer__subheading">Need help?</h2>
+                <a class="footer__link" href="/en/contact.html">Contact me</a>
+            </div>
+            <div class="footer__language">
+                <a class="language__link--active" href="/fr/movie.html">FR</a>
+                <div class="footer__language__line"></div>
+                <a class="language__link--inactive" href="#">EN</a>
+            </div>
+        </div>
+    <div class="footer__mailto">
+        <p class="footer__text">Yaroslav Yermakov MMi1</p>
+        <a class="footer__mail" href="mailto:yaroslav.yermakov@edu.univ-fcomte.fr">yaroslav.yermakov@edu.univ-fcomte.fr</a>
+    </div>
+        <p class="footer__text">Project created as part of an educational exercise at the MMi department of Montbéliard</p>
+    </footer>
+</body>
+</html>

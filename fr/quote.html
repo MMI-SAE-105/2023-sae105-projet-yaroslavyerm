@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote</title>
+    <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="alternate" hreflang="fr" href="https://the-great-gatsby.yermakov.fr/fr/quote" />
+    <link rel="alternate" hreflang="en" href="https://the-great-gatsby.yermakov.fr/en/quote" />
+</head>
+<body>
+    <header class="header">
+        <div class="header__top">
+            <button class="menu__open"
+            aria-controls="menu"
+            @click="menuIsOpen= true">
+                <img src="/public/img/menu-open.svg" alt="menu open button">
+            </button>
+            <a href="/en/index.html" class="logo__link"><img class="logo__img" src="/public/img/logo.svg" alt="logo"></a>
+        </div>
+        <nav class="menu"
+        x-show="menuIsOpen"
+        x-transition.duration.800ms>
+            <div class="menu__top">
+                <a href="/en/index.html" class="logo__menu"><img src="/public/img/logo.svg" alt="logo"></a>
+                <h1 class="menu__title">Menu</h1>
+                <button class="menu__close" aria-controls="menu" @click="menuIsOpen = false"><img src="/public/img/menu-close.svg"
+                        alt="menu close button"></button>
+            </div>
+            <ul class="menu__list">
+                <li class="menu__item" x-data="{listOpen: false}">
+                    <button aria-controls="menu__articles" @click="listOpen = !listOpen" class="menu__button">All articles</button>
+                    <ul class="menu__articles" x-show="listOpen" x-collapse>
+                        <li class="menu__article"><a class="menu__article__link" href="/en/quote.html">Quote</a></li>
+                        <li class="menu__article"><a class="menu__article__link" href="/en/movie.html">Movie</a></li>
+                        <li class="menu__article"><a class="menu__article__link" href="/en/director.html">Director</a></li>
+                        <li class="menu__article"><a class="menu__article__link" href="/en/book.html">Book</a></li>
+                        <li class="menu__article"><a class="menu__article__link" href="/en/music.html">Music</a></li>
+                    </ul>
+                </li>
+                <li class="menu__item"><a class="menu__link" href="/en/glossary.html">Glossary</a></li>
+                <li class="menu__item"><a class="menu__link" href="/en/about.html">About</a></li>
+                <li class="menu__item"><a class="menu__link" href="/en/other.html">Other projects</a></li>
+                <li class="menu__item"><a class="menu__link" href="/en/contact.html">Contact me</a></li>
+            </ul>
+        </nav>
+        <h1 class="title">“All the bright precious things fade so fast and they don’t come back”</h1>
+        <div class="header__background">
+            <div class="header__background__overlay1"></div>
+            <div class="header__background__overlay2"></div>
+            <div class="header__background__overlay3"></div>
+            <img class="header__background__img" src="/public/img/header_quote.webp" alt="art deco pattern">
+        </div>
+    </header>
+    <main>
+        <p class="main__published">by Yaroslav Yermakov
+        published Tuesday, October 17 at 15:37</p>
+        <p class="main__text">In Baz Luhrmann's 2013 adaptation of <strong>‘The Great Gatsby’</strong>, a cinematic masterpiece based on F. Scott Fitzgerald's classic
+        novel, the character <strong>Daisy Buchanan</strong> says: <em>"All the bright precious things fade so fast, and they don’t come back"</em>. This
+        quote shows some of the film's main themes, highlighting the fleeting nature of beauty, wealth, and dreams in the
+        decadent world of the 1920s.</p>
+        <h2 class="main__subheading">Beauty Lost in the Jazz Age</h2>
+        <p class="main__text">The context in which <strong>Daisy Buchanan</strong> delivers this line is crucial to understanding its significance. Daisy, portrayed by
+        Carey Mulligan, is a character trapped in the opulence and shallowness of the Jazz Age. She is the object of <strong>Jay
+        Gatsby's</strong> (played by Leonardo DiCaprio) unrequited love, and her voice becomes a symbol of the elusive American Dream. In
+        the scene, Daisy, Gatsby's former lover, is confronted by her husband <strong>Tom Buchanan</strong> about her feelings for Gatsby. As she
+        reflects on her past and the choices she made, she realizes that the glamorous world she once inhabited has faded into a
+        distant memory. This line reflects her disillusionment and the inevitable transience of the extravagant lifestyle she
+        embraced.</p>
+        <img class="main__img" src="/public/img/img1_quote.webp" alt="image 1">
+        <h2 class="main__subheading">The Great Gatsby's Central Themes</h2>
+        <p class="main__text">The quote perfectly aligns with the central themes of <strong>"The Great Gatsby"</strong>. The story delves into the idea of the <strong>American
+        Dream</strong>, showing how the pursuit of wealth and status often leads to emptiness and disillusionment. The characters in the
+        film are chasing after the mirage of happiness, believing that material possessions and social standing will bring them
+        fulfillment. However, as Daisy's line suggests, these <em>"bright precious things"</em> are ephemeral, and the pursuit of them
+        often comes at the cost of genuine happiness and meaningful connections.</p>
+        <h2 class="main__subheading">Resonance in Music: "Young and Beautiful" by Lana Del Rey</h2>
+        <p class="main__text">Lana Del Rey's <strong>"Young and Beautiful"</strong>, featured in the film's soundtrack, beautifully complements the sentiment expressed
+        in Daisy's quote. The song captures the essence of fleeting youth and beauty, much like the characters in the movie. Del
+        Rey's haunting vocals and melancholic lyrics evoke a sense of <strong>longing and nostalgia</strong>, mirroring the film's exploration of
+        lost dreams and unattainable ideals. The lyrics resonate with the idea that the pursuit of beauty and perfection can
+        lead to a sense of <strong>loss and unfulfillment</strong>, a theme central to both the song and the movie.</p>
+        <img class="main__img" src="/public/img/img2_quote.webp" alt="image 2">
+        <h2 class="main__subheading">The Timeless Message of "The Great Gatsby"</h2>
+        <p class="main__text">In conclusion, the line from "The Great Gatsby", <em>"All the bright precious things fade too fast, and they don’t come
+        back"</em>, encapsulates the film's central message about the transient nature of wealth and the American Dream. It serves as
+        a poignant reminder that the pursuit of superficial goals often results in the loss of deeper, more meaningful
+        experiences. This theme is beautifully mirrored in Lana Del Rey's "Young and Beautiful", making it a fitting addition to
+        the film's soundtrack. Together, these elements create a powerful and thought-provoking narrative that continues to
+        captivate audiences, reminding us of the enduring relevance of Fitzgerald's classic tale.</p>
+    </main>
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="footer__contact">
+                <h2 class="footer__subheading">Need help?</h2>
+                <a class="footer__link" href="/en/contact.html">Contact me</a>
+            </div>
+            <div class="footer__language">
+                <a class="language__link--active" href="/fr/quote.html">FR</a>
+                <div class="footer__language__line"></div>
+                <a class="language__link--inactive" href="#">EN</a>
+            </div>
+        </div>
+        <div class="footer__mailto">
+            <p class="footer__text">Yaroslav Yermakov MMi1</p>
+            <a class="footer__mail" href="mailto:yaroslav.yermakov@edu.univ-fcomte.fr">yaroslav.yermakov@edu.univ-fcomte.fr</a>
+        </div>
+        <p class="footer__text">Project created as part of an educational exercise at the MMi department of Montbéliard</p>
+    </footer>
+</body>
+</html>

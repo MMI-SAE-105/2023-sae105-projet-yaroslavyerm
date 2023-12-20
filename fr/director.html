@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Director</title>
+    <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="alternate" hreflang="fr" href="https://the-great-gatsby.yermakov.fr/fr/director" />
+    <link rel="alternate" hreflang="en" href="https://the-great-gatsby.yermakov.fr/en/director" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__top">
+            <button class="menu__open"
+            aria-controls="menu"
+            @click="menuIsOpen = true">
+                <img src="/public/img/menu-open.svg" alt="menu open button">
+            </button>
+            <a href="/en/index.html" class="logo__link"><img class="logo__img" src="/public/img/logo.svg" alt="logo"></a>
+        </div>
+        <nav class="menu"
+        x-show="menuIsOpen"
+        x-transition.duration.800ms>
+            <div class="menu__top">
+                <a href="/en/index.html" class="logo__menu"><img src="/public/img/logo.svg" alt="logo"></a>
+                <h1 class="menu__title">Menu</h1>
+                <button class="menu__close" aria-controls="menu" @click="menuIsOpen = false"><img src="/public/img/menu-close.svg"
+                        alt="menu close button"></button>
+            </div>
+            <ul class="menu__list">
+                <li class="menu__item" x-data="{listOpen: false}">
+                    <button aria-controls="menu__articles" @click="listOpen = !listOpen" class="menu__button">All articles</button>
+                    <ul class="menu__articles" x-show="listOpen" x-collapse>
+                        <li class="menu__article"><a class="menu__article__link" href="/en/quote.html">Quote</a></li>
+                        <li class="menu__article"><a class="menu__article__link" href="/en/movie.html">Movie</a></li>
+                        <li class="menu__article"><a class="menu__article__link" href="/en/director.html">Director</a>
+                        </li>
+                        <li class="menu__article"><a class="menu__article__link" href="/en/book.html">Book</a></li>
+                        <li class="menu__article"><a class="menu__article__link" href="/en/music.html">Music</a></li>
+                    </ul>
+                </li>
+                <li class="menu__item"><a class="menu__link" href="/en/glossary.html">Glossary</a></li>
+                <li class="menu__item"><a class="menu__link" href="/en/about.html">About</a></li>
+                <li class="menu__item"><a class="menu__link" href="/en/other.html">Other projects</a></li>
+                <li class="menu__item"><a class="menu__link" href="/en/contact.html">Contact me</a></li>
+            </ul>
+        </nav>
+        <h1 class="title">Baz Luhrmann: A Visionary Director Redefining Cinema</h1>
+        <div class="header__background">
+            <div class="header__background__overlay1"></div>
+            <div class="header__background__overlay2"></div>
+            <div class="header__background__overlay3"></div>
+            <img class="header__background__img" src="/public/img/header_director.webp" alt="art deco pattern">
+        </div>
+    </header>
+    <main>
+        <p class="main__published">by Yaroslav Yermakov
+        published Thursday, October 19 at 9:53</p>
+        <p class="main__text">Baz Luhrmann, the renowned Australian filmmaker, screenwriter, and producer, is celebrated for his innovative approach
+        to storytelling and his distinctive cinematic style. Born on <strong>September 17, 1962</strong>, in <strong>Sydney, Australia</strong>, Luhrmann's
+        journey into the world of creativity began in theater, leading him to become one of the most influential directors in
+        the film industry today.</p>
+        <h2 class="main__subheading">Beginning of his career</h2>
+        <p class="main__text">Luhrmann made his mark in the film world with <strong>"Strictly Ballroom"</strong> (1992), a romantic comedy that displayed his talent
+        for dynamic visuals and unconventional narratives. However, it was his 1996 film <strong>"Romeo + Juliet"</strong> that truly catapulted
+        him to international fame. His modern interpretation of Shakespeare's timeless tragedy, set in a neon-soaked, violent
+        Verona Beach, captivated audiences, and critics alike.</p>
+        <img class="main__img" src="/public/img/img1_director.webp" alt="image 1">
+        <h2 class="main__subheading">A Fusion of Artistic Forms</h2>
+        <p class="main__text">Known for his ability to blend different artistic forms, Luhrmann's work transcends traditional boundaries. His films
+        often feature hyper-stylized visuals, vibrant color palettes, and a unique fusion of music and narrative. This signature
+        style was further exemplified in <strong>"Moulin Rouge!"</strong> (2001), a musical extravaganza that earned critical acclaim and
+        numerous Academy Award nominations.</p>
+        <h2 class="main__subheading">Creating Immersive Worlds</h2>
+        <p class="main__text">One of Luhrmann's greatest strengths as a director is his talent for creating <strong>immersive worlds</strong> that seamlessly blend
+        reality with fantasy. His commitment to pushing the boundaries of cinematic storytelling is evident in every project he
+        takes on.</p>
+        <h2 class="main__subheading">Screenwriter and Producer Extraordinaire</h2>
+        <p class="main__text">In addition to his directorial prowess, <strong>Luhrmann's</strong> skills as a screenwriter and producer have contributed significantly
+        to his success. He has a knack for crafting engaging narratives that resonate with audiences, all while staying true to
+        his distinctive artistic vision.</p>
+        <img class="main__img" src="/public/img/img2_director.webp" alt="image 2">
+        <h2 class="main__subheading">A Legacy of Classic Stories Reimagined</h2>
+        <p class="main__text"><strong>Baz Luhrmann's</strong> career has been characterized by his dedication to reimagining classic stories for contemporary
+        audiences. His unique vision and unwavering commitment to storytelling continue to inspire filmmakers and captivate
+        viewers worldwide.</p>
+        <h2 class="main__subheading">Other works of the director</h2>
+
+        <div class="carrousel" x-data="{hrefCourant: '#ecran-1',}">
+            <button class="carrousel__button carrousel__button--back" aria-label="previous slide"
+                @click="parent = $refs.parent;parent.scrollLeft -= parent.clientWidth">
+                &lt;
+            </button>
+            <button class="carrousel__button carrousel__button--forward" aria-label="next slide"
+                @click="parent = $refs.parent;parent.scrollLeft += parent.clientWidth">
+                >
+            </button>
+            <div class="carrousel__parent--ecrans" x-ref="parent" @scroll.debounce.250ms.passive="
+                hrefCourant = '#'+
+                [...$refs.parent.children]
+                .find(e=>e.getBoundingClientRect().x>=0).id">
+                <div id="ecran-1" class="carrousel__ecran">
+                    <figure>
+                        <img src="/public/img/car1.webp" alt="image ecran 1">
+                    </figure>
+                </div>
+                <div id="ecran-2" class="carrousel__ecran">
+                    <figure>
+                        <img src="/public/img/car2.webp" alt="image ecran 2">
+                    </figure>
+                </div>
+                <div id="ecran-3" class="carrousel__ecran">
+                    <figure>
+                        <img src="/public/img/car3.webp" alt="image ecran 3">
+                    </figure>
+                </div>
+                <div id="ecran-4" class="carrousel__ecran">
+                    <figure>
+                        <img src="/public/img/car4.webp" alt="image ecran 4">
+                    </figure>
+                </div>
+                <div id="ecran-5" class="carrousel__ecran">
+                    <figure>
+                        <img src="/public/img/car5.webp" alt="image ecran 5">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="footer__contact">
+                <h2 class="footer__subheading">Need help?</h2>
+                <a class="footer__link" href="/en/contact.html">Contact me</a>
+            </div>
+            <div class="footer__language">
+                <a class="language__link--active" href="/fr/director.html">FR</a>
+                <div class="footer__language__line"></div>
+                <a class="language__link--inactive" href="#">EN</a>
+            </div>
+        </div>
+        <div class="footer__mailto">
+            <p class="footer__text">Yaroslav Yermakov MMi1</p>
+            <a class="footer__mail" href="mailto:yaroslav.yermakov@edu.univ-fcomte.fr">yaroslav.yermakov@edu.univ-fcomte.fr</a>
+        </div>
+        <p class="footer__text">Project created as part of an educational exercise at the MMi department of Montbéliard</p>
+    </footer>
+</body>
+</html>

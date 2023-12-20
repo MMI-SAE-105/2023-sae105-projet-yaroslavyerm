@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="alternate" hreflang="fr" href="https://the-great-gatsby.yermakov.fr/fr/" />
+    <link rel="alternate" hreflang="en" href="https://the-great-gatsby.yermakov.fr/en/" />
+</head>
+
+<body>
+    <header class="header header--home">
+        <div class="header__top">
+            <button class="menu__open" aria-controls="menu" @click="menuIsOpen = true">
+            <img src="/public/img/menu-open.svg" alt="menu open button">
+        </button>
+        <a href="#" class="logo__link"><img class="logo__img" src="/public/img/logo.svg" alt="logo"></a>
+        </div>
+        <nav class="menu"
+        x-show="menuIsOpen"
+        x-transition.duration.800ms>
+            <div class="menu__top">
+                <a href="/en/index.html" class="logo__menu"><img src="/public/img/logo.svg" alt="logo"></a>
+                <h1 class="menu__title">Menu</h1>
+                <button class="menu__close" aria-controls="menu" @click="menuIsOpen = false"><img class="menu__close__img" src="/public/img/menu-close.svg"
+                        alt="menu close button"></button>
+            </div>
+            <ul class="menu__list">
+                <li class="menu__item" x-data="{listOpen : false}">
+                    <button class="menu__button"
+                    aria-controls="menu__articles"
+                    @click="listOpen = !listOpen"
+                    :class="{open: listOpen}">
+                    All articles
+                </button>
+                    <ul id="menu__articles"
+                    x-show="listOpen"
+                    x-collapse
+                    class="menu__articles">
+                        <li class="menu__article"><a class="menu__article__link" href="/en/quote.html">Quote</a></li>
+                        <li class="menu__article"><a class="menu__article__link" href="/en/movie.html">Movie</a></li>
+                        <li class="menu__article"><a class="menu__article__link" href="/en/director.html">Director</a></li>
+                        <li class="menu__article"><a class="menu__article__link" href="/en/book.html">Book</a></li>
+                        <li class="menu__article"><a class="menu__article__link" href="/en/music.html">Music</a></li>
+                    </ul>
+                </li>
+                <li class="menu__item"><a class="menu__link" href="/en/glossary.html">Glossary</a></li>
+                <li class="menu__item"><a class="menu__link" href="/en/about.html">About</a></li>
+                <li class="menu__item"><a class="menu__link" href="/en/other.html">Other projects</a></li>
+                <li class="menu__item"><a class="menu__link" href="/en/contact.html">Contact me</a></li>
+            </ul>
+        </nav>
+        <h1 class="home__title">All the bright precious things...</h1>
+        <div class="header__background header__background--home">
+            <div class="header__background__overlay1 header__background__overlay1--home"></div>
+            <div class="header__background__overlay2 header__background__overlay2--home"></div>
+            <div class="header__background__overlay3 header__background__overlay3--home"></div>
+            <img class="header__background__img header__background__img--home" src="/public/img/header_home.webp" alt="art deco pattern">
+        </div>
+    </header>
+    <main>
+        <p class="home__intro">Uncover the culture of an age known for its luxury and intrigue. This website celebrates the Roaring Twenties, in the
+        context of the novel "The Great Gatsby." Dive into the exquisite Art Deco fashion and find out the life lessons of this
+        iconic classic.</p>
+        <section class="home__discover">
+            <h2 class="home__subheading">Discover more</h2>
+            <article class="home__article">
+                <a class="home__article__link" href="/en/quote.html">
+                    <img class="home__article__img" src="/public/img/card_1.webp" alt="card 1 image">
+                    <h3 class="home__article__title">All the bright precious things fade so fast and they don’t come back</h3>
+                </a>
+            </article>
+            <article class="home__article">
+                <a class="home__article__link" href="/en/movie.html">
+                    <img class="home__article__img" src="/public/img/card_2.webp" alt="card 2 image">
+                    <h3 class="home__article__title">The Great Gatsby: A Cinematic Masterpiece Inspired by a Timeless Classic</h3>
+                </a>
+            </article>
+            <article class="home__article">
+                <a class="home__article__link" href="/en/director.html">
+                    <img class="home__article__img" src="/public/img/card_3.webp" alt="card 3 image">
+                    <h3 class="home__article__title">Baz Luhrmann: A Visionary Director Redefining Cinema</h3>
+                </a>
+            </article>
+            <article class="home__article">
+                <a class="home__article__link" href="/en/book.html">
+                    <img class="home__article__img" src="/public/img/card_4.webp" alt="card 4 image">
+                    <h3 class="home__article__title">The Great Gatsby: A Classic Tale of Wealth, Love, and Betrayal</h3>
+                </a>
+            </article>
+            <article class="home__article">
+                <a class="home__article__link" href="/en/music.html">
+                    <img class="home__article__img" src="/public/img/card_5.webp" alt="card 5 image">
+                    <h3 class="home__article__title">Elegance in Sound: Lana Del Rey's Young and Beautiful in The Great Gatsby</h3>
+                </a>
+            </article>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="footer__contact">
+                <h2 class="footer__subheading">Need help?</h2>
+                <a class="footer__link" href="/en/contact.html">Contact me</a>
+            </div>
+            <div class="footer__language">
+                <a class="language__link--active" href="/fr/index.html">FR</a>
+                <div class="footer__language__line"></div>
+                <a class="language__link--inactive" href="#">EN</a>
+            </div>
+        </div>
+        <div class="footer__mailto">
+        <p class="footer__text">Yaroslav Yermakov MMi1</p>
+        <a class="footer__mail" href="mailto:yaroslav.yermakov@edu.univ-fcomte.fr">yaroslav.yermakov@edu.univ-fcomte.fr</a>
+        </div>
+        <p class="footer__text">Project created as part of an educational exercise at the MMi department of Montbéliard</p>
+    </footer>
+</body>
+
+</html>
