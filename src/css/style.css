@@ -13,6 +13,7 @@
 
 @import "components/menu.css";
 @import "components/home.css";
+@import "components/timeline.css";
 
 @font-face {
     font-family: 'Park Lane Nf';
