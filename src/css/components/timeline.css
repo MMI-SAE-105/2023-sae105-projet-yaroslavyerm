@@ -16,7 +16,7 @@
 
 .timeline__list--small{
     list-style: none;
-    padding-left: 30px;
+    padding-left: 20px;
 }
 
 .timeline__item--small{
@@ -26,14 +26,14 @@
 .timeline__item__div{
     display: flex;
     flex-direction: row;
-    width: calc(60vw + 57px);
+    width: calc(70vw + 57px);
     margin-bottom: 20px;
 }
 
 .timeline__text--small{
     line-height: 75px;
     font-family: Ironick NF;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: normal;
     color: var(--pale-beige);
     margin: 0;
@@ -51,5 +51,5 @@
 .timeline__text__container{
     display: block;
     justify-content: center;
-    width: 60vw;   
+    width: 70vw;   
 }
