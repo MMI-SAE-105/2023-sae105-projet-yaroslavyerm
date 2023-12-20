@@ -67,4 +67,11 @@ main{
     font-size: var(--subheadings);
     font-weight: normal;
     text-align: center;
+    transition: color 0.5s linear;
+    transition: background-color 0.5s linear;
+}
+    
+.main__link:active{
+    background-color: var(--pale-beige);
+    color: var(--dark-blue);
 }
