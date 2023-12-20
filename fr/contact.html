@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
 
 <head>
     <meta charset="UTF-8">
@@ -21,13 +21,13 @@
             @click="menuIsOpen = true">
                 <img src="/public/img/menu-open.svg" alt="menu open button">
             </button>
-            <a href="/en/index.html" class="logo__link"><img class="logo__img" src="/public/img/logo.svg" alt="logo"></a>
+            <a href="/fr/index.html" class="logo__link"><img class="logo__img" src="/public/img/logo.svg" alt="logo"></a>
         </div>
         <nav class="menu"
         x-show="menuIsOpen"
         x-transition.duration.800ms>
             <div class="menu__top">
-                <a href="/en/index.html" class="logo__menu"><img src="/public/img/logo.svg" alt="logo"></a>
+                <a href="/fr/index.html" class="logo__menu"><img src="/public/img/logo.svg" alt="logo"></a>
                 <h1 class="menu__title">Menu</h1>
                 <button class="menu__close"
                 aria-controls="menu"
@@ -37,18 +37,18 @@
                 <li class="menu__item" x-data="{listOpen: false}">
                     <button aria-controls="menu__articles" @click="listOpen = !listOpen" class="menu__button">All articles</button>
                     <ul class="menu__articles" x-show="listOpen" x-collapse>
-                        <li class="menu__article"><a class="menu__article__link" href="/en/quote.html">Quote</a></li>
-                        <li class="menu__article"><a class="menu__article__link" href="/en/movie.html">Movie</a></li>
-                        <li class="menu__article"><a class="menu__article__link" href="/en/director.html">Director</a>
+                        <li class="menu__article"><a class="menu__article__link" href="/fr/quote.html">Quote</a></li>
+                        <li class="menu__article"><a class="menu__article__link" href="/fr/movie.html">Movie</a></li>
+                        <li class="menu__article"><a class="menu__article__link" href="/fr/director.html">Director</a>
                         </li>
-                        <li class="menu__article"><a class="menu__article__link" href="/en/book.html">Book</a></li>
-                        <li class="menu__article"><a class="menu__article__link" href="/en/music.html">Music</a></li>
+                        <li class="menu__article"><a class="menu__article__link" href="/fr/book.html">Book</a></li>
+                        <li class="menu__article"><a class="menu__article__link" href="/fr/music.html">Music</a></li>
                     </ul>
                 </li>
-                <li class="menu__item"><a class="menu__link" href="/en/glossary.html">Glossary</a></li>
-                <li class="menu__item"><a class="menu__link" href="/en/about.html">About</a></li>
-                <li class="menu__item"><a class="menu__link" href="/en/other.html">Other projects</a></li>
-                <li class="menu__item"><a class="menu__link" href="/en/contact.html">Contact me</a></li>
+                <li class="menu__item"><a class="menu__link" href="/fr/glossary.html">Glossary</a></li>
+                <li class="menu__item"><a class="menu__link" href="/fr/about.html">About</a></li>
+                <li class="menu__item"><a class="menu__link" href="/fr/other.html">Other projects</a></li>
+                <li class="menu__item"><a class="menu__link" href="/fr/contact.html">Contact me</a></li>
             </ul>
         </nav>
         <h1 class="title">Contact me</h1>
@@ -74,12 +74,12 @@
         <div class="footer__top">
             <div class="footer__contact">
                 <h2 class="footer__subheading">Need help?</h2>
-                <a class="footer__link" href="/en/contact.html">Contact me</a>
+                <a class="footer__link" href="/fr/contact.html">Contact me</a>
             </div>
             <div class="footer__language">
-                <a class="language__link--active" href="/fr/contact.html">FR</a>
+                <a class="language__link--inactive" href="#">FR</a>
                 <div class="footer__language__line"></div>
-                <a class="language__link--inactive" href="#">EN</a>
+                <a class="language__link--active" href="/fr/contact.html">EN</a>
             </div>
         </div>
         <div class="footer__mailto">

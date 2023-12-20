@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
 
 <head>
     <meta charset="UTF-8">
@@ -25,7 +25,7 @@
         x-show="menuIsOpen"
         x-transition.duration.800ms>
             <div class="menu__top">
-                <a href="/en/index.html" class="logo__menu"><img src="/public/img/logo.svg" alt="logo"></a>
+                <a href="/fr/index.html" class="logo__menu"><img src="/public/img/logo.svg" alt="logo"></a>
                 <h1 class="menu__title">Menu</h1>
                 <button class="menu__close" aria-controls="menu" @click="menuIsOpen = false"><img class="menu__close__img" src="/public/img/menu-close.svg"
                         alt="menu close button"></button>
@@ -42,17 +42,17 @@
                     x-show="listOpen"
                     x-collapse
                     class="menu__articles">
-                        <li class="menu__article"><a class="menu__article__link" href="/en/quote.html">Quote</a></li>
-                        <li class="menu__article"><a class="menu__article__link" href="/en/movie.html">Movie</a></li>
-                        <li class="menu__article"><a class="menu__article__link" href="/en/director.html">Director</a></li>
-                        <li class="menu__article"><a class="menu__article__link" href="/en/book.html">Book</a></li>
-                        <li class="menu__article"><a class="menu__article__link" href="/en/music.html">Music</a></li>
+                        <li class="menu__article"><a class="menu__article__link" href="/fr/quote.html">Quote</a></li>
+                        <li class="menu__article"><a class="menu__article__link" href="/fr/movie.html">Movie</a></li>
+                        <li class="menu__article"><a class="menu__article__link" href="/fr/director.html">Director</a></li>
+                        <li class="menu__article"><a class="menu__article__link" href="/fr/book.html">Book</a></li>
+                        <li class="menu__article"><a class="menu__article__link" href="/fr/music.html">Music</a></li>
                     </ul>
                 </li>
-                <li class="menu__item"><a class="menu__link" href="/en/glossary.html">Glossary</a></li>
-                <li class="menu__item"><a class="menu__link" href="/en/about.html">About</a></li>
-                <li class="menu__item"><a class="menu__link" href="/en/other.html">Other projects</a></li>
-                <li class="menu__item"><a class="menu__link" href="/en/contact.html">Contact me</a></li>
+                <li class="menu__item"><a class="menu__link" href="/fr/glossary.html">Glossary</a></li>
+                <li class="menu__item"><a class="menu__link" href="/fr/about.html">About</a></li>
+                <li class="menu__item"><a class="menu__link" href="/fr/other.html">Other projects</a></li>
+                <li class="menu__item"><a class="menu__link" href="/fr/contact.html">Contact me</a></li>
             </ul>
         </nav>
         <h1 class="home__title">All the bright precious things...</h1>
@@ -70,31 +70,31 @@
         <section class="home__discover">
             <h2 class="home__subheading">Discover more</h2>
             <article class="home__article">
-                <a class="home__article__link" href="/en/quote.html">
+                <a class="home__article__link" href="/fr/quote.html">
                     <img class="home__article__img" src="/public/img/card_1.webp" alt="card 1 image">
                     <h3 class="home__article__title">All the bright precious things fade so fast and they don’t come back</h3>
                 </a>
             </article>
             <article class="home__article">
-                <a class="home__article__link" href="/en/movie.html">
+                <a class="home__article__link" href="/fr/movie.html">
                     <img class="home__article__img" src="/public/img/card_2.webp" alt="card 2 image">
                     <h3 class="home__article__title">The Great Gatsby: A Cinematic Masterpiece Inspired by a Timeless Classic</h3>
                 </a>
             </article>
             <article class="home__article">
-                <a class="home__article__link" href="/en/director.html">
+                <a class="home__article__link" href="/fr/director.html">
                     <img class="home__article__img" src="/public/img/card_3.webp" alt="card 3 image">
                     <h3 class="home__article__title">Baz Luhrmann: A Visionary Director Redefining Cinema</h3>
                 </a>
             </article>
             <article class="home__article">
-                <a class="home__article__link" href="/en/book.html">
+                <a class="home__article__link" href="/fr/book.html">
                     <img class="home__article__img" src="/public/img/card_4.webp" alt="card 4 image">
                     <h3 class="home__article__title">The Great Gatsby: A Classic Tale of Wealth, Love, and Betrayal</h3>
                 </a>
             </article>
             <article class="home__article">
-                <a class="home__article__link" href="/en/music.html">
+                <a class="home__article__link" href="/fr/music.html">
                     <img class="home__article__img" src="/public/img/card_5.webp" alt="card 5 image">
                     <h3 class="home__article__title">Elegance in Sound: Lana Del Rey's Young and Beautiful in The Great Gatsby</h3>
                 </a>
@@ -105,12 +105,12 @@
         <div class="footer__top">
             <div class="footer__contact">
                 <h2 class="footer__subheading">Need help?</h2>
-                <a class="footer__link" href="/en/contact.html">Contact me</a>
+                <a class="footer__link" href="/fr/contact.html">Contact me</a>
             </div>
             <div class="footer__language">
-                <a class="language__link--active" href="/fr/index.html">FR</a>
+                <a class="language__link--inactive" href="#">FR</a>
                 <div class="footer__language__line"></div>
-                <a class="language__link--inactive" href="#">EN</a>
+                <a class="language__link--active" href="/fr/index.html">EN</a>
             </div>
         </div>
         <div class="footer__mailto">
