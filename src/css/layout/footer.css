@@ -17,8 +17,8 @@
 .footer__contact{
     display: flex;
     flex-direction: column;
-    width: 110px;
-    align-items: center;
+    width: auto;
+    align-items: left;
 }
 
 .footer__subheading{
