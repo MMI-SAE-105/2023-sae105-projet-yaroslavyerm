@@ -15,6 +15,7 @@
 @import "components/home.css";
 @import "components/timeline.css";
 @import "components/other.css";
+@import "components/contact.css";
 
 @font-face {
     font-family: 'Park Lane Nf';
