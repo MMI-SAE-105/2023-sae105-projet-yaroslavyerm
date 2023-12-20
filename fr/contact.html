@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact me</title>
+    <title>Contactez moi</title>
     <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
     <script defer src="https://unpkg.com/alpinejs"></script>
     <link rel="stylesheet" href="/src/css/style.css">
@@ -35,23 +35,23 @@
             </div>
             <ul class="menu__list">
                 <li class="menu__item" x-data="{listOpen: false}">
-                    <button aria-controls="menu__articles" @click="listOpen = !listOpen" class="menu__button">All articles</button>
+                    <button aria-controls="menu__articles" @click="listOpen = !listOpen" class="menu__button">Tous les articles</button>
                     <ul class="menu__articles" x-show="listOpen" x-collapse>
-                        <li class="menu__article"><a class="menu__article__link" href="/fr/quote.html">Quote</a></li>
-                        <li class="menu__article"><a class="menu__article__link" href="/fr/movie.html">Movie</a></li>
-                        <li class="menu__article"><a class="menu__article__link" href="/fr/director.html">Director</a>
+                        <li class="menu__article"><a class="menu__article__link" href="/fr/quote.html">Citation</a></li>
+                        <li class="menu__article"><a class="menu__article__link" href="/fr/movie.html">Film</a></li>
+                        <li class="menu__article"><a class="menu__article__link" href="/fr/director.html">Réalisateur</a>
                         </li>
-                        <li class="menu__article"><a class="menu__article__link" href="/fr/book.html">Book</a></li>
-                        <li class="menu__article"><a class="menu__article__link" href="/fr/music.html">Music</a></li>
+                        <li class="menu__article"><a class="menu__article__link" href="/fr/book.html">Livre</a></li>
+                        <li class="menu__article"><a class="menu__article__link" href="/fr/music.html">Musique</a></li>
                     </ul>
                 </li>
-                <li class="menu__item"><a class="menu__link" href="/fr/glossary.html">Glossary</a></li>
-                <li class="menu__item"><a class="menu__link" href="/fr/about.html">About</a></li>
-                <li class="menu__item"><a class="menu__link" href="/fr/other.html">Other projects</a></li>
-                <li class="menu__item"><a class="menu__link" href="/fr/contact.html">Contact me</a></li>
+                <li class="menu__item"><a class="menu__link" href="/fr/glossary.html">Glosaire</a></li>
+                <li class="menu__item"><a class="menu__link" href="/fr/about.html">À propos</a></li>
+                <li class="menu__item"><a class="menu__link" href="/fr/other.html">Autres projets</a></li>
+                <li class="menu__item"><a class="menu__link" href="/fr/contact.html">Contactez moi</a></li>
             </ul>
         </nav>
-        <h1 class="title">Contact me</h1>
+        <h1 class="title">Contactez moi</h1>
         <div class="header__background">
             <div class="header__background__overlay1"></div>
             <div class="header__background__overlay2"></div>
@@ -61,20 +61,20 @@
     </header>
     <main>
         <form class="contact__form" action="#" method="get">
-            <label class="contact__label" for="name">Name</label>
+            <label class="contact__label" for="name">Nom</label>
             <input class="contact__input" type="text" id="name" required>
             <label class="contact__label" for="email">Email</label>
             <input class="contact__input" type="email" id="email" required>
             <label class="contact__label" for="message">Message</label>
             <textarea class="contact__textarea" id="message" rows="5"></textarea>
-            <button class="contact__button" type="submit">Submit</button>
+            <button class="contact__button" type="submit">Envoyer</button>
         </form>
     </main>
     <footer class="footer">
         <div class="footer__top">
             <div class="footer__contact">
-                <h2 class="footer__subheading">Need help?</h2>
-                <a class="footer__link" href="/fr/contact.html">Contact me</a>
+                <h2 class="footer__subheading">Besoin d'aide?</h2>
+                <a class="footer__link" href="/fr/contact.html">Contactez moi</a>
             </div>
             <div class="footer__language">
                 <a class="language__link--inactive" href="#">FR</a>
@@ -86,7 +86,7 @@
             <p class="footer__text">Yaroslav Yermakov MMi1</p>
             <a class="footer__mail" href="mailto:yaroslav.yermakov@edu.univ-fcomte.fr">yaroslav.yermakov@edu.univ-fcomte.fr</a>
         </div>
-        <p class="footer__text">Project created as part of an educational exercise at the MMi department of Montbéliard</p>
+        <p class="footer__text">Projet réalisé dans le cadre d’un exercice pédagogique au département MMi de Montbéliard</p>
     </footer>
 </body>
 </html>
