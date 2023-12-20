@@ -90,35 +90,44 @@
         audiences. His unique vision and unwavering commitment to storytelling continue to inspire filmmakers and captivate
         viewers worldwide.</p>
         <h2 class="main__subheading">Other works of the director</h2>
+
         <div class="carrousel" x-data="{hrefCourant: '#ecran-1',}">
-            <button class="carrousel__button carrousel__button--back"
-            aria-label="previous slide"
-            @click="parent = $refs.parent;parent.scrollLeft -= parent.clientWidth">
+            <button class="carrousel__button carrousel__button--back" aria-label="previous slide"
+                @click="parent = $refs.parent;parent.scrollLeft -= parent.clientWidth">
                 &lt;
             </button>
-            <button class="carrousel__button carrousel__button--forward"
-            aria-label="next slide"
-            @click="parent = $refs.parent;parent.scrollLeft += parent.clientWidth">
+            <button class="carrousel__button carrousel__button--forward" aria-label="next slide"
+                @click="parent = $refs.parent;parent.scrollLeft += parent.clientWidth">
                 >
             </button>
-            <div x-ref="parent" @scroll.debounce.250ms.passive="
-                    hrefCourant = '#'+
-                    [...$refs.parent.children]
-                    .find(e=>e.getBoundingClientRect().x>=0).id">
+            <div class="carrousel__parent--ecrans" x-ref="parent" @scroll.debounce.250ms.passive="
+                hrefCourant = '#'+
+                [...$refs.parent.children]
+                .find(e=>e.getBoundingClientRect().x>=0).id">
                 <div id="ecran-1" class="carrousel__ecran">
-                    <figure><img src="/public/img/car1.webp" alt="carousel slide 1"></figure>
+                    <figure>
+                        <img src="/public/img/car1.webp" alt="image ecran 1">
+                    </figure>
                 </div>
                 <div id="ecran-2" class="carrousel__ecran">
-                    <figure><img src="/public/img/car2.webp" alt="carousel slide 2"></figure>
+                    <figure>
+                        <img src="/public/img/car2.webp" alt="image ecran 2">
+                    </figure>
                 </div>
                 <div id="ecran-3" class="carrousel__ecran">
-                    <figure><img src="/public/img/car3.webp" alt="carousel slide 3"></figure>
+                    <figure>
+                        <img src="/public/img/car3.webp" alt="image ecran 3">
+                    </figure>
                 </div>
                 <div id="ecran-4" class="carrousel__ecran">
-                    <figure><img src="/public/img/car4.webp" alt="carousel slide 4"></figure>
+                    <figure>
+                        <img src="/public/img/car4.webp" alt="image ecran 4">
+                    </figure>
                 </div>
                 <div id="ecran-5" class="carrousel__ecran">
-                    <figure><img src="/public/img/car5.webp" alt="carousel slide 5"></figure>
+                    <figure>
+                        <img src="/public/img/car5.webp" alt="image ecran 5">
+                    </figure>
                 </div>
             </div>
         </div>

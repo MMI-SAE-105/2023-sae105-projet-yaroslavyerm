@@ -1,0 +1,47 @@
+.carrousel__parent--ecrans {
+    display: flex;
+    width: 100%;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+.carrousel__ecran {
+    width: 100%;
+    flex: none;
+    scroll-snap-align: start;
+}
+
+.carrousel__ecran figure {
+    margin: 0;
+}
+
+.carrousel {
+    position: relative;
+}
+
+.carrousel__button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2rem;
+    height: 2rem;
+    background: var(--pale-beige);
+    border-radius: 50%;
+    border: none;
+    display: grid;
+    place-content: center;
+    color: var(--dark-blue);
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: Ironick NF;
+    margin: 0 10px;
+}
+
+.carrousel__button--back {
+    left: 0;
+}
+
+.carrousel__button--forward {
+    right: 0;
+}
