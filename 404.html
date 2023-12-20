@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Non trouvée</title>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="alternate" hreflang="fr" href="https://sae105.yermakov.fr/fr/404" />
+    <link rel="alternate" hreflang="en" href="https://sae105.yermakov.fr/en/404" />
+</head>
+
+<body class="error__body">
+    <h1 class="error__title">Page Non trouvée</h1>
+    <form class="error__form" action="https://duckduckgo.com/" method="GET" x-data="{ q:'', }"
+        x-on:submit="q = q + ' site:mmimontbeliard.com'">
+        <label class="error__label" for="q">Text à chercher:</label>
+        <input class="error__input" type="text" id="q" name="q" x-model="q">
+        <button class="error__button" type="submit">Rechercher</button>
+    </form>
+</body>
+
+</html>

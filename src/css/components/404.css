@@ -1,0 +1,48 @@
+.error__body{
+    background-color: var(--pale-beige);
+}
+
+.error__title{
+    color: var(--dark-blue);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.error__form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.error__label{
+    color: var(--dark-blue);
+    margin-bottom: 10px;
+    font-family: Bembo Std;
+    font-size: var(--text);
+    font-weight: normal;
+}
+
+.error__input{
+    width: calc(100% - 70px);
+    height: 20px;
+    margin: 0 30px;
+    border: solid 1px var(--dark-blue);
+    font-family: Bembo Std;
+    font-size: var(--text);
+    font-weight: normal;
+    color: var(--dark-blue);
+    background-color: var(--pale-beige);
+    padding: 10px 5px;
+}
+
+.error__button{
+    width: calc(100% - 60px);
+    height: 30px;
+    margin: 10px 30px;
+    background-color: var(--dark-blue);
+    color: var(--pale-beige);
+    border: solid 1px var(--dark-blue);
+    font-family: Bembo Std;
+    font-size: var(--text);
+    font-weight: normal;
+}

@@ -18,6 +18,7 @@
 @import "components/contact.css";
 @import "components/carrousel.css";
 @import "components/glossary.css";
+@import "components/404.css";
 
 @font-face {
     font-family: 'Park Lane Nf';
