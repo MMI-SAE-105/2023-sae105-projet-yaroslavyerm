@@ -73,7 +73,7 @@
 }
 
 .timeline__line{
-    width: 1.5px;
+    width: 1px;
     height: 1610px;
     background-color: var(--dark-blue);
     margin: 0;
