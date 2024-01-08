@@ -10,6 +10,7 @@
     flex-direction: row;
     align-items: center;
     margin-bottom: 10px;
+    z-index: 2;
 }
 
 .timeline__text--big{
@@ -26,17 +27,18 @@
     width: 6px;
     height: 6px;
     border-radius: 50%;
-    background-color: var(--black);
+    background-color: var(--dark-blue);
     margin-left: 15px;
+}
+
+.timeline__item--small{
+    position: relative;
+    z-index: 2;
 }
 
 .timeline__list--small{
     list-style: none;
     padding-left: 20px;
-}
-
-.timeline__item--small{
-    
 }
 
 .timeline__item__div{
@@ -68,4 +70,15 @@
     display: block;
     justify-content: center;
     width: 70vw;   
+}
+
+.timeline__line{
+    width: 1px;
+    height: 1610px;
+    background-color: var(--dark-blue);
+    margin: 0;
+    margin-left: 89px;
+    position: absolute;
+    top: 665px;
+    z-index: 1;
 }
