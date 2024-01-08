@@ -5,13 +5,29 @@
     padding: 0;
 }
 
+.timeline__div--big{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
 .timeline__text--big{
     font-family: Ironick NF;
     font-size: var(--headings);
     font-weight: normal;
     line-height: 119%;
     color: var(--dark-blue);
-    margin-bottom: 10px;    
+    margin: 0;    
+    width: 72px;
+}
+
+.timeline__dot{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--black);
+    margin-left: 15px;
 }
 
 .timeline__list--small{
