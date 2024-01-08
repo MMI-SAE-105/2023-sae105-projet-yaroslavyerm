@@ -36,6 +36,7 @@
     font-weight: bold;
     font-family: Ironick NF;
     margin: 0 10px;
+    line-height: 2rem;
 }
 
 .carrousel__button--back {
