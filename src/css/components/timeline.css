@@ -73,11 +73,11 @@
 }
 
 .timeline__line{
-    width: 1px;
+    width: 1.5px;
     height: 1610px;
     background-color: var(--dark-blue);
     margin: 0;
-    margin-left: 89px;
+    margin-left: 90px;
     position: absolute;
     top: 665px;
     z-index: 1;
